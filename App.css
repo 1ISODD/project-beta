@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  overflow: hidden; /* Prevent overflow */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: row; /* Arrange sections horizontally */
+  width: 500vw; /* 5 sections, each 100vw wide */
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth and elegant transition */
+}
+
+.section {
+  width: 100vw; /* Each section takes full viewport width */
+  height: 100vh; /* Each section takes full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent image overflow */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth hover transition */
+}
+
+.section.hovered {
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: scale(1.1); /* Zoom in slightly on hover */
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the section without distortion */
+}
