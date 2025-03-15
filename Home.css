@@ -1,0 +1,34 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.section.inactive {
+  opacity: 0.3;
+  transform: scale(0.9);
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
